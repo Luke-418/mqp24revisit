@@ -2,6 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/reVISit-studies/study/main/src/parser/GlobalConfigSchema.json",
     "configsList": [
         "html-demo",
+        "figure-demo",
         "image-demo",
         "html-input",
         "survey-demo",
@@ -17,6 +18,9 @@
     "configs": {
         "fairness-jnd": {
             "path": "fairness-jnd/config-fairness-jnd.json"
+        },
+        "figure-demo": {
+            "path": "figure-demo/config-figure-demo.json"
         },
         "html-demo": {
             "path": "html-demo/config-html-demo.json"
