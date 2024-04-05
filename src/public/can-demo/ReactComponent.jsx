@@ -1,6 +1,6 @@
 import React from 'react';
 
-function component({ parameters }: { parameters : object}) {
+function component({ parameters }) {
   console.log(parameters);
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
