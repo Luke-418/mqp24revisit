@@ -32,7 +32,7 @@
     "no-restricted-exports": "off",
     "no-restricted-syntax": "off",
     "no-underscore-dangle": "off",
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-console":"off",
     "@typescript-eslint/no-unused-expressions": [
       "error",
       {

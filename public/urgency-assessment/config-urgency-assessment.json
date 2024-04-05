@@ -1,0 +1,213 @@
+{
+    "$schema": "https://raw.githubusercontent.com/reVISit-studies/study/main/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "Graphical Urgency Assessment",
+        "version": "pilot",
+        "authors": [
+            "The reVISit Team"
+        ],
+        "date": "2023-04-14",
+        "description": "This study aims to evaluate how different visual representations of test results influence perceived urgency. Based on the study design by Zikmund-Fisher et al., 2016 Graphics help patients distinguish between urgent and non-urgent deviations in laboratory test results. Responses are collected through a series of image-based questions.",
+        "organizations": [
+            "University of Utah",
+            "WPI",
+            "University of Toronto"
+        ]
+    },
+    "uiConfig": {
+        "contactEmail": "urgency@test.com",
+        "helpTextPath": "urgency-assessment/help.md",
+        "logoPath": "assets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "sidebar": true
+    },
+    "components": {
+        "introduction": {
+            "type": "markdown",
+            "path": "urgency-assessment/introduction.md",
+            "response": []
+        },
+        "results-urgency-low": {
+            "meta": {
+                "difficulty": 1,
+                "nr-dots": 20,
+                "temp": "low"
+            },
+            "description": "This image depicts test results with a low urgency level.",
+            "instruction": "Rate the urgency level of the test results shown in the image.",
+            "type": "image",
+            "path": "urgency-assessment/1.png",
+            "style": {
+                "width": "800px"
+            },
+            "nextButtonLocation": "sidebar",
+            "response": [
+                {
+                    "id": "urgency-response-low",
+                    "prompt": "Urgency Level:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Low",
+                            "value": "1"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "2"
+                        },
+                        {
+                            "label": "High",
+                            "value": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "results-urgency-medium": {
+            "description": "This image shows test results with a medium urgency level.",
+            "instruction": "Rate the urgency level of the test results shown in the image.",
+            "type": "image",
+            "path": "urgency-assessment/2.png",
+            "style": {
+                "width": "800px"
+            },
+            "nextButtonLocation": "sidebar",
+            "response": [
+                {
+                    "id": "urgency-response-medium",
+                    "prompt": "Urgency Level:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Low",
+                            "value": "1"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "2"
+                        },
+                        {
+                            "label": "High",
+                            "value": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "results-urgency-high": {
+            "description": "This image represents test results with a high urgency level.",
+            "instruction": "Rate the urgency level of the test results shown in the image.",
+            "type": "image",
+            "path": "urgency-assessment/3.png",
+            "style": {
+                "width": "800px"
+            },
+            "nextButtonLocation": "sidebar",
+            "response": [
+                {
+                    "id": "urgency-response-high",
+                    "prompt": "Urgency Level:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Low",
+                            "value": "1"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "2"
+                        },
+                        {
+                            "label": "High",
+                            "value": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "results-urgency-veryhigh": {
+            "description": "This image indicates test results with a very high urgency level.",
+            "instruction": "Rate the urgency level of the test results shown in the image.",
+            "type": "image",
+            "path": "urgency-assessment/4.png",
+            "style": {
+                "width": "800px"
+            },
+            "nextButtonLocation": "sidebar",
+            "response": [
+                {
+                    "id": "urgency-response-veryhigh",
+                    "prompt": "Urgency Level:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Low",
+                            "value": "1"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "2"
+                        },
+                        {
+                            "label": "High",
+                            "value": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "results-urgency-extremehigh": {
+            "description": "This image depicts test results with an extremely high urgency level.",
+            "instruction": "Rate the urgency level of the test results shown in the image.",
+            "type": "image",
+            "path": "urgency-assessment/5.png",
+            "style": {
+                "width": "800px"
+            },
+            "nextButtonLocation": "sidebar",
+            "response": [
+                {
+                    "id": "urgency-response-extremehigh",
+                    "prompt": "Urgency Level:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Low",
+                            "value": "1"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "2"
+                        },
+                        {
+                            "label": "High",
+                            "value": "3"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "introduction",
+            "results-urgency-low",
+            "results-urgency-medium",
+            "results-urgency-high",
+            "results-urgency-veryhigh",
+            "results-urgency-extremehigh"
+        ]
+    }
+}

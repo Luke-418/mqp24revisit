@@ -1,0 +1,1533 @@
+{
+  "$schema": "https://raw.githubusercontent.com/reVISit-studies/study/main/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Color Association",
+    "version": "pilot",
+    "authors": [
+      "The reVISit Team"
+    ],
+    "date": "2023-04-14",
+    "description": "This study investigates how different colors prompt individuals to choose one option over another, focusing specifically on the selection of colored bins without explicit instructions. Our experiment is designed to understand the basic associations people make with colors in decision-making scenarios. Study baded on Color inference in visual communication: the meaning of colors in recycling by Karen B. Schloss et al., 2018, which looks at how color impacts trash and recycling behaviors.",
+    "organizations": [
+      "University of Utah",
+      "WPI",
+      "University of Toronto"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "test@test.com",
+    "helpTextPath": "can-demo/help.md",
+    "logoPath": "assets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "sidebar": true
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "can-demo/introduction.md",
+      "response": []
+    },
+    "can-comp": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "orange"
+        ]
+      },
+      "response": [
+        {
+          "id": "can",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },       "can-comp1": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "yellow"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo1",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp2": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "green"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp3": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp4": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp5": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp6": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "yellow"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp7": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "green"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp8": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp9": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp10": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp11": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "green"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp12": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp13": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp14": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp15": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp16": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp17": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp18": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp19": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "cyan",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp20": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "cyan",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp21": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard trash in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "blue",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp0": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "orange"
+        ]
+      },
+      "response": [
+        {
+          "id": "can",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },       
+    "can-comp01": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "yellow"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo1",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp02": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "green"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp03": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp04": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp05": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "red",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp06": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "yellow"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp07": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "green"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp08": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp09": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp010": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "orange",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp011": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "green"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp012": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp013": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp014": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "yellow",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp015": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp016": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "cyan"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp017": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp018": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "green",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp019": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "cyan",
+          "blue"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp020": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "cyan",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    },
+    "can-comp021": {
+      "description": "Can color question",
+      "instruction": "Which can would you discard recyclying in?",
+      "type": "react-component",
+      "path": "can-demo/ReactComponent.tsx",
+      "parameters": {
+        "data": [
+          "blue",
+          "purple"
+        ]
+      },
+      "response": [
+        {
+          "id": "can-demo",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "Left",
+              "value": "opt-1"
+            },
+            {
+              "label": "Right",
+              "value": "opt-2"
+            }
+          ]
+        }
+      ],
+      "nextButtonLocation": "sidebar",
+      "instructionLocation": "sidebar"
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction",
+      "can-comp",
+      "can-comp1",
+      "can-comp2",
+      "can-comp3",
+      "can-comp4",
+      "can-comp5",
+      "can-comp6",
+      "can-comp7",
+      "can-comp8",
+      "can-comp9",
+      "can-comp10",
+      "can-comp11",
+      "can-comp12",
+      "can-comp13",
+      "can-comp14",
+      "can-comp15",
+      "can-comp16",
+      "can-comp17",
+      "can-comp18",
+      "can-comp19",
+      "can-comp20",
+      "can-comp21",
+      "can-comp0",
+      "can-comp01",
+      "can-comp02",
+      "can-comp03",
+      "can-comp04",
+      "can-comp05",
+      "can-comp06",
+      "can-comp07",
+      "can-comp08",
+      "can-comp09",
+      "can-comp010",
+      "can-comp011",
+      "can-comp012",
+      "can-comp013",
+      "can-comp014",
+      "can-comp015",
+      "can-comp016",
+      "can-comp017",
+      "can-comp018",
+      "can-comp019",
+      "can-comp020",
+      "can-comp021"
+    ]
+  }
+}
